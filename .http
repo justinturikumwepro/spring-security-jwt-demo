@@ -1,0 +1,26 @@
+
+### variables
+@baseUrl= http://localhost:8080/api
+
+GET {{baseUrl}}/users/
+```
+
+### Create a new user
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+    "username": "John",
+    "password": "ADMIN",
+    "role":"ADMIN"
+}
+
+###login
+
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+    "username": "John",
+    "password": "ADMIN"
+}
